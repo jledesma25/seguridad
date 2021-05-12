@@ -7,6 +7,10 @@ import androidx.security.crypto.MasterKeys
 
 object SecurityPreferences {
 
+    fun sumar(numero1:Int, numero2:Int): Int{
+        return numero1 + numero2
+    }
+
     fun Context.encryptedPreferences(preferencesName:String) : SharedPreferences {
 
         val masterKeyAlias :String = MasterKeys.getOrCreate(MasterKeys.AES256_GCM_SPEC)
