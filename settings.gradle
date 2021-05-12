@@ -1,0 +1,3 @@
+include ':operacion'
+include ':app'
+rootProject.name = "Seguridad"
